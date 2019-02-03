@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content=",,,">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HASH TAG</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBf07y-hNTRzpmqJhJx-04IyBuTKU-mi3A",
+            authDomain: "hs-lp-6fcca.firebaseapp.com",
+            databaseURL: "https://hs-lp-6fcca.firebaseio.com",
+            projectId: "hs-lp-6fcca",
+            storageBucket: "hs-lp-6fcca.appspot.com",
+            messagingSenderId: "669797297801"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <div class="header_box">
+        <img class="header_logo" src="images/logo.jpg" alt="">
+        <ul class="header_nav-box">
+            <li class="header_nav">about</li>
+            <li class="header_nav">menu</li>
+            <li class="header_nav">info</li>
+        </ul>
+    </div>
+    <div class="mainimg_box" id="mib">
+        <div class="mainimg_title-box is_active" id="mtb" onmouseover="mouseover();">
+            <div class="mainimg_title is_active" id="mt"># Hashtag #</div>
+            <div class="mainimg_titile-sub">#</div>
+        </div>
+    </div>
+    <div class="main_box">
+        <div class="main_wrapper about_box">
+            <div class="sentence about_spec">
+                ここに文章を書く
+            </div>
+            <div class="img_main about">
+                <div class="mainimg_title-box-s">
+                </div>
+            </div>
+        </div>
+        <div class="main_wrapper menu_box">
+            <div class="img_main menu">
+                <div class="mainimg_title-box-s">
+                </div>
+            </div>
+            <div class="sentence about_spec">
+                ここに文章を書く
+            </div>
+        </div>
+        <div class="main_wrapper info_box">
+            <div class="sentence about_spec">
+                ここに文章を書く
+            </div>
+            <div class="img_main about">
+                <div class="mainimg_title-box-s">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="header_top">
+            <div class="header_top-h b_gray">基本情報</div>
+            <div class="header_top-c">
+                <div class="header_top-ct">Hashtag ハッシュタグ</div>
+                <div class="header_top-cc">東梅田駅５分・各線梅田駅アクセス抜群！SNS映え料理多数！<br>女子会にも◎野菜巻き串＆馬肉ユッケ寿司で宴会♪</div>
+            </div>
+        </div>
+        <div class="header_middle"></div>
+        <div class="header_bottom"></div>
+    </footer>
+    <script type="text/javascript">
+        const mib = document.getElementsById("mib");
+        const mtb = document.getElementsById("mtb");
+        const mt = document.getElementsById("mt");
+
+        function mouseover() {
+            document.getElementsById("mtb").removeClass = "is_active";
+            mt.removeClass = "is_active";
+        }
+    </script>
+</body>
+</html>
